@@ -1,0 +1,10 @@
+{
+  "hospital_branding": "Sistem Sahibi: {hospital_name}",
+  "status_stable": "Durum: Stabil",
+  "status_warning": "DİKKAT: Ödem Riski Tespit Edildi!",
+  "status_critical": "KRİTİK: Ambulans Çağrılıyor!",
+  "measure_button": "Hemen Ölçüm Yap",
+  "ohm_value": "Vücut Direnci (Ohm)",
+  "language_selection": "Dil Seçimi",
+  "emergency_call_sent": "Acil durum bildirimi ve GPS verisi merkeze iletildi."
+}
