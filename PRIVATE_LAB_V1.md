@@ -13,3 +13,33 @@ Bu bölümde kameradan gelen ışık verisini analiz ediyoruz:
 ## 🛠️ Gelecek Planı (Gizli Mod)
 1. AI Kamera ile Bio-Ohm verisini tek bir "Risk Skoru"na dönüştür.
 2. Acil durum butonunu "Sesli Komut" ile çalışacak hale getir.
+# 🧠 VitalGuard Decision Engine (Zeka Katmanı)
+# Amacı: İki farklı veriyi yorumlayıp hastaneye bildirim göndermek.
+
+def analyze_risk(bpm, ohm_value):
+    # Senin Kuralın: Hastane ismi her zaman sabit kalmalı.
+    hospital_name = "Merkez Hastanesi" 
+    
+    # Eşik Değerleri
+    CRITICAL_BPM = 110      # Nabız 110 üstü riskli
+    EDEMA_THRESHOLD = 400   # Ohm değeri 400 altı (sıvı artışı/direnç düşüşü)
+
+    if bpm > CRITICAL_BPM and ohm_value < EDEMA_THRESHOLD:
+        status = "🔴 KRİTİK: Acil Müdahale Gerekli!"
+        action = "Hastaneye ve Yakınlarına Konum Gönderiliyor..."
+    elif ohm_value < EDEMA_THRESHOLD:
+        status = "🟡 UYARI: Ödem Belirtisi."
+        action = "Tuz tüketimini kısıtlayın ve dinlenin."
+    else:
+        status = "🟢 STABİL: Durum Normal."
+        action = "Takibe devam ediliyor."
+
+    return f"[{hospital_name}] Durum Raporu: {status} | Aksiyon: {action}"
+
+# Örnek Test: Nabız 115, Ohm 350 (Kritik Durum)
+# print(analyze_risk(115, 350))
+Bileşen,Konum,Kural
+Hastane Adı,Sol Üst,"Değiştirilmedikçe ""Merkez Hastanesi"" yazar."
+Dil Seçeneği,Sağ Üst,EN / TR bayrakları (Tıklandığında anlık çeviri).
+AI Kamera,Orta Panel,Yüz çevresi yeşil kare; nabız grafiği altında.
+Ohm Grafiği,Alt Panel,% düşüşü gösteren bar (Kırmızı/Yeşil).
