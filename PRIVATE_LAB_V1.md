@@ -13,7 +13,7 @@ Bu bölümde kameradan gelen ışık verisini analiz ediyoruz:
 ## 🛠️ Gelecek Planı (Gizli Mod)
 1. AI Kamera ile Bio-Ohm verisini tek bir "Risk Skoru"na dönüştür.
 2. Acil durum butonunu "Sesli Komut" ile çalışacak hale getir.
-# 🧠 VitalGuard Decision Engine (Zeka Katmanı)
+# 🧠 VitalGuard Decision Engine (Zeka Katmanı) 
 # Amacı: İki farklı veriyi yorumlayıp hastaneye bildirim göndermek.
 
 def analyze_risk(bpm, ohm_value):
