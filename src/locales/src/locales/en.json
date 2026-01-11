@@ -1,0 +1,10 @@
+{
+  "hospital_branding": "System Provider: {hospital_name}",
+  "status_stable": "Status: Stable",
+  "status_warning": "WARNING: Edema Risk Detected!",
+  "status_critical": "CRITICAL: Calling Emergency Services!",
+  "measure_button": "Measure Now",
+  "ohm_value": "Body Resistance (Ohm)",
+  "language_selection": "Language Selection",
+  "emergency_call_sent": "Emergency alert and GPS data sent to the center."
+}
