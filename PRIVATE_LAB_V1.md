@@ -43,3 +43,5 @@ Hastane Adı,Sol Üst,"Değiştirilmedikçe ""Merkez Hastanesi"" yazar."
 Dil Seçeneği,Sağ Üst,EN / TR bayrakları (Tıklandığında anlık çeviri).
 AI Kamera,Orta Panel,Yüz çevresi yeşil kare; nabız grafiği altında.
 Ohm Grafiği,Alt Panel,% düşüşü gösteren bar (Kırmızı/Yeşil).
+AI Face Tracking Logic:Detection: Haar-Cascades veya MediaPipe kullanılarak yüz koordinatları ($x, y, w, h$) belirlenir.ROI (Region of Interest): Alın bölgesi, ışık yansıması ve damar yoğunluğu nedeniyle "Sinyal Odak Noktası" olarak seçilir.Filtering: Ortam ışığındaki titremeler (noise), "Band-pass filter" ile temizlenerek sadece $0.75\text{ Hz} - 4\text{ Hz}$ (45-240 BPM arası) frekanslar kabul edilir.
+
