@@ -59,5 +59,83 @@ class UIController:
             "EN": {"welcome": "Welcome", "pulse": "Heart Rate"}
         }
 
-    def render(self):
+    def render(self):## 📁 Modül 4: Hastane Entegrasyonu (JSON Data Package)
+> **Senaryo:** Risk Analiz Motoru "Kritik" kararı verdiğinde, bulut sistemine aşağıdaki paket gönderilir.
+}
         return f"{self.hospital_identity} | {self.translations[self.current_lang]['welcome']}"
+
+### 🚀 Acil Durum Veri Paketi Yapısı
+```python
+```json
+{
+  "hospital_id": "Merkez Hastanesi",
+  "timestamp": "2026-01-11T12:10:00Z",
+  "patient_status": {
+    "risk_level": "CRITICAL",
+    "language_preference": "TR"
+  },
+  "vital_signs": {
+    "heart_rate_bpm": 112,
+    "ai_camera_confidence": 0.94,
+    "bio_ohm_resistance": 385,
+    "edema_index": "%22 Increase"
+  },
+  "location": {
+    "home_address": "Private_Encrypted_Data",
+    "gps": "41.0082, 28.9784"
+  }
+
+## 🖼️ Modül 5: Master Dashboard (Görsel Tasarım Planı)
+> **Hedef:** Verilerin karmaşadan uzak, hayati bilgiyi öne çıkaracak şekilde sunulması.
+
+### 📐 Ekran Yerleşim Şeması (Wireframe)
+
+| Üst Bar (Header) | Sol Panel (Vital) | Sağ Panel (Grafik) |
+| :--- | :--- | :--- |
+| **[🏥 Merkez Hastanesi]** | **[📷 AI Kamera View]** | **[📈 Nabız Trendi]** |
+| (Sabit Branding) | (Yüz Takibi & ROI) | (Son 24 Saat) |
+| **[🌐 TR / EN]** | **[💓 Anlık BPM: 72]** | **[🌊 Ödem İndeksi]** |
+| (Dil Değiştirici) | (Büyük Dijital Rakam) | (% Değişim Çizelgesi) |
+
+### 🎨 Görsel Kurallar (UI Rules)
+1. **Renk Kodları:** - Normal: Yeşil (#2ECC71)
+   - Uyarı: Sarı (#F1C40F)
+   - Kritik: Kırmızı (#E74C3C)
+2. **Hastane İsmi:** Yazılımın `config` dosyasından okunur, kullanıcı müdahalesiyle dashboard üzerinden değiştirilemez.
+3. **Dil:** Tek tıkla tüm etiketler (BPM -> Nabız, Status -> Durum vb.) anlık güncellenir.
+## 🎙️ Modül 6: Sesli Komut ve Acil Tetikleme (Voice Assist)
+> **Senaryo:** Hasta fiziksel olarak cihaza dokunamadığında, belirli anahtar kelimelerle sistemi aktive eder.
+
+### 🛠️ Teknik Altyapı
+- **Kütüphane:** SpeechRecognition (Python) / Web Speech API
+- **Anahtar Kelimeler (Trigger Words):** - [TR]: "Yardım et", "Fenalaştım", "Acil durum"
+  - [EN]: "Help me", "Emergency", "I feel sick"
+
+### 📜 Sesli Komut Algoritması (Kod Taslağı)
+```python
+def listen_for_emergency(audio_input):
+    # Senin kuralın: Çift dil desteği burada da aktif.
+    triggers = {
+        "TR": ["yardım et", "acil durum", "fenalaştım"],
+        "EN": ["help me", "emergency", "i feel sick"]
+    }
+    
+    command = audio_input.lower()
+    
+    # Her iki dilde de kontrol et
+    if any(word in command for word in triggers["TR"] + triggers["EN"]):
+        return trigger_emergency_protocol()
+    return "Listening..."
+
+def trigger_emergency_protocol():
+    # Hastane ismini sabit tutarak alarm gönder
+    hospital = "Merkez Hastanesi"
+    return f"🚨 {hospital}: Acil durum protokolü sesli komutla başlatıldı!"
+
+## 🎬 Modül 7: Video Lansman Senaryosu (Final)
+Zaman,Görüntü (Visual),Ses/Metin (Audio/Text)
+00:00 - 05:00,"Karanlık bir ekran, ortada şık bir logo. Üstte sabit: Merkez Hastanesi.","Derin bir nefes sesi. ""Geleceğin sağlık takibi, dokunmadan başlıyor."""
+05:00 - 15:00,"Ekran ikiye bölünür. Sol tarafta bir kullanıcının yüzü, üzerinde yeşil bir tarama karesi (AI Kamera). Sağda ""Nabız: 72 BPM"" yazısı belirir.","""AI rPPG teknolojisiyle, sadece kameraya bakarak hayati verilerinizi ölçün."""
+15:00 - 30:00,"Ekranın sağ alt köşesinde bir bar grafiği yükselir: ""Ödem İndeksi (Bio-Ohm)"". Sağ üstteki TR/EN butonu yanıp söner ve dil anlık olarak İngilizceye döner (Heart Rate, Edema Index).","""Dil engellerini kaldırın, kurumsal kimliğinizi koruyun. Tam entegre sağlık paneli."""
+30:00 - 45:00,"Kullanıcı ""Yardım et!"" (veya ""Help me!"") diye fısıldar. Ekranda mavi ses dalgaları yayılır. Bir anda ekranın her yeri kırmızı bir çerçeveyle kaplanır: 🚨 ACİL DURUM BİLDİRİMİ.","""Sesli komutla hayat kurtaran müdahale. Sistem otomatik olarak hastaneye veri paketini gönderiyor."""
+45:00 - 60:00,"Ekranda bir JSON veri paketinin hızlıca aktığı görülür. Video, Merkez Hastanesi logosu ve ""VitalGuard: Her An Yanınızda"" sloganıyla biter.","""VitalGuard. Güven, teknolojiyle buluşuyor."""
