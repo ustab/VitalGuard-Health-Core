@@ -1,4 +1,4 @@
-# VitaGuard: AI-Powered Remote Monitoring for Chronic & Post-ICU Care
+# VitalGuard: AI-Powered Remote Monitoring for Chronic & Post-ICU Care
 
 ![Language](https://img.shields.io/badge/Language-EN%20%7C%20TR-blue) 
 ![Status](https://img.shields.io/badge/Status-In%20Development-orange)
@@ -6,7 +6,7 @@
 ---
 
 ## Overview (EN)
-**VitaGuard** is a smart digital health ecosystem designed for **post-ICU (Intensive Care Unit) discharge patients** and **elderly individuals with chronic conditions** (Heart Failure, COPD, etc.). 
+**VitalGuard** is a smart digital health ecosystem designed for **post-ICU (Intensive Care Unit) discharge patients** and **elderly individuals with chronic conditions** (Heart Failure, COPD, etc.). 
 
 Our mission is to bridge the gap between hospital-grade monitoring and home recovery by predicting emergencies before they occur.
 
@@ -20,7 +20,7 @@ Our mission is to bridge the gap between hospital-grade monitoring and home reco
 ---
 
 ## Genel Bakış (TR)
-**VitaGuard**, hem **yoğun bakım (YB)** sonrası taburcu olan hastalar hem de evde takip gerektiren **kronik hastalığı (Kalp Yetmezliği, KOAH vb.) olan yaşlılar** için geliştirilmiş akıllı bir dijital sağlık asistanıdır.
+**VitalGuard**, hem **yoğun bakım (YB)** sonrası taburcu olan hastalar hem de evde takip gerektiren **kronik hastalığı (Kalp Yetmezliği, KOAH vb.) olan yaşlılar** için geliştirilmiş akıllı bir dijital sağlık asistanıdır.
 
 Amacımız, hastane kalitesindeki takibi eve taşıyarak krizleri gerçekleşmeden önce öngörmektir.
 
