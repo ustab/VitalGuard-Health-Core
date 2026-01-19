@@ -1,4 +1,4 @@
-# 🧪 VitalGuard Private Lab Notes
+# 🧪 EVEYES 360 Private Lab Notes
 > Bu dosya sadece geliştirme notlarını içerir.
 
 ## 🛠️ Sistem Kuralları (Core Rules)
